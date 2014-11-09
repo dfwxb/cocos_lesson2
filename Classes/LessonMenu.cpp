@@ -19,6 +19,12 @@
 #include "T21ScrollView.h"
 #include "T22TableView.h"
 #include "T23TableViewSmall.h"
+#include "T24Memory.h"
+#include "T25Action.h"
+#include "T26ActionShow.h"
+#include "T27ActionMore.h"
+#include "T28Animation.h"
+#include "AnimationPreLoad.h"
 
 USING_NS_CC;
 
@@ -57,7 +63,13 @@ static const char* s_lesson[] = {
 	"T20ProgressTimer",
 	"T21ScrollView",
 	"T22TableView",
-	"T23TableViewSmall"
+	"T23TableViewSmall",
+	"T24Memory",
+	"T25Action",
+	"T26ActionShow",
+	"T27ActionMore",
+	"T28Animation",
+	"T29AnimationPreLoad"
 };
 
 bool LessonMenu::init()
@@ -161,6 +173,24 @@ void LessonMenu::enterItem(CCObject* pSender)
 		break;
 	case 19:
 		pScene = T23TableViewSmall::scene();
+		break;
+	case 20:
+		pScene = T24Memory::scene();
+		break;
+	case 21:
+		pScene = T25Action::scene();
+		break;
+	case 22:
+		pScene = T26ActionShow::scene();
+		break;
+	case 23:
+		pScene = T27ActionMore::scene();
+		break;
+	case 24:
+		pScene = T28Animation::scene();
+		break;
+	case 25:
+		pScene = AnimationPreLoad::scene();
 		break;
 	default:
 		break;
